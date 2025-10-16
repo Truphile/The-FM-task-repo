@@ -8,15 +8,6 @@ for check in string_given :
 print(reversed_string)
 
 
-num = int(input("Enter an integer: "))
-
-sign = -1 if num < 0 else 1
-num *= sign  
-
-reversed_num = int(str(num)[::-1]) * sign
-
-print("Reversed number:", reversed_num)
-
 word = 'AveCeLa'
 count = 0
 for char in word:
@@ -59,15 +50,15 @@ print(average)
 numbers = '324576'
 even_sum = 0
 for number in numbers:
-	if number % 2 == 0:
-		even_sum += number
+	if int(number) % 2 == 0:
+		even_sum += int(number)
 print(even_sum)
 
 numbers = '324576'
 odd_sum = 0
 for number in numbers:
-	if number % 2 != 0:
-		odd_sum += number
+	if int(number) % 2 != 0:
+		odd_sum += int(number)
 print(odd_sum)
 
 
@@ -83,12 +74,42 @@ for check in range(word_check // 2):
 print(check)
            
 
+base = 5
+exponent = 4
+power = 1
+
+for _ in range(base):
+	power = base**exponent
+print(power)
+	 
+
+for number in range(2, 101):  
+	#number < 1 is not prime)
+    is_prime = True  
+
+    for facts in range(2, int(number ** 0.5) + 1): 
+        if number % facts == 0:
+            is_prime = False
+            break 
+    if is_prime:
+        print(number, end=" ")
+
+facts = 0
+for number in range(2, 101):
+	is_prime = True  
+
+for facts in range(2, int(number ** 0.5) + 1):
+	if number % facts == 0:
+		is_prime = False
+		facts+1
+		break 
+
+print(facts, end=" ")
 
 
+binary_numbers = ["100","101", "1101", "111","11111111", "110","10010", "1000"]
 
-
-
-
-
-
-
+for check in binary_numbers:
+	decimal_num = int(check, 2)
+	print(f"{check} : {decimal_num}", end=" ")
+  

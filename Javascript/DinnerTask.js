@@ -61,7 +61,7 @@ console.log(product);
 
 let alphabet = "";
 for (let character = 'A'.charCodeAt(0); character <= 'Z'.charCodeAt(0); character++) {
-    alphabet += String.fromCharCode(character) + " ";
+    
 }
 console.log(alphabet);
 
@@ -92,39 +92,39 @@ for (let count = 0; count < word.length; count++) {
     console.log(lower_case);
 }
 
-let word = "WINDOWS";
+let newWord = "windows";
 
-for (let count = 0; count < word.length; count++) {
-    let upper_case = word[count].toUpperCase();
+for (let count = 0; count < newWord.length; count++) {
+    let upper_case = newWord[count].toUpperCase();
     console.log(upper_case);
 }
 
-let number = "45";
-let sum = 0;
+let numberOne = "45";
+let sumNumber = 0;
 
-for (let i = 0; i < number.length; i++) {
-    sum += Number(number[i]);
+for (let i = 0; i < numberOne.length; i++) {
+    sumNumber += Number(numberOne[i]);
 }
 
 console.log(sum);
 
-let number = "32";
-let largest_digit = number[0];
+let numberTwo = "32";
+let largest_digit = numberTwo[0];
 
-for (let i = 0; i < number.length; i++) {
-	if (number[i] > largest_digit) {
-		largest_digit = number[i];
+for (let i = 0; i < numberTwo.length; i++) {
+	if (numberTwo[i] > largest_digit) {
+		largest_digit = numberTwo[i];
 	}
 }
 
 console.log(largest_digit);
 
-let number = "54";
-let smallest_digit = number[0];
+let numberThree = "54";
+let smallest_digit = numberThree[0];
 
-for (let count = 0; count < number.length; count++) {
-    if (number[count] < smallest_digit) {
-        smallest_digit = number[count];
+for (let count = 0; count < numberThree.length; count++) {
+    if (numberThree[count] < smallest_digit) {
+        smallest_digit = numberThree[count];
     }
 }
 
