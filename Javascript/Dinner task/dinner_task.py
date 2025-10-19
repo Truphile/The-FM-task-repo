@@ -1,21 +1,21 @@
 for even in range(1, 101):
     if even % 2 == 0:
-        print("This are even numbers from 1 to 100:", even, end=" ")
+        print(even, end=" ")
 
 for odd in range(50, 101):
     if odd % 2 != 0:
-        print("This are odd numbers from 50 to 100:", odd)
+        print(odd, end=" ")
 
 for numbers in range(1, 101):
-    print("This are numbers from 1 to 100:", numbers, end=" ")
+    print(numbers, end=" ")
 
 for count in range(0, 21):
     square = count * count
-    print("This are the square of numbers from 1 to 200:", square, end=" ")
+    print(square, end=" ")
 
 for number in range(1, 51):
     if number % 3 == 0:
-        print("This are the multiples of 3 between 1 and 50:", number)
+        print(number, end=" ")
 
 for number in range(0, 101):
     if number % 3 == 0 and number % 5 == 0:
@@ -44,7 +44,7 @@ number = 0
 multiplication = 0
 for count in range(0, 13):
     multiplication = count * 4
-    print(multiplication)
+    print(multiplication, end=" ")
 
 character = 'e'
 characters = 0
@@ -53,20 +53,20 @@ for count in range(0, len(words)):
     letters = words[count]
     if letters == character:
         characters += 1
-print(characters)
+print(characters, end=" ")
 
 
 text = "WINDOWS"
 
 for index in range(len(text)):
     lowercase_char = text[index].lower()
-    print(lowercase_char)
+    print(lowercase_char, end=" ")
 
 text = "WINDOWS"
 
 for index in range(len(text)):
     upper_case_char = text[index].upper()
-    print(upper_case_char)
+    print(upper_case_char, end=" ")
 
 number = "45"
 sum = 0
@@ -76,6 +76,38 @@ for digit in number:
 
 print(sum)
 
+word = "aeroplane"
+
+"""
+vowels = aeiou
+"""
+check_a = 0 
+check_e = 0
+check_i = 0
+check_o = 0
+check_u = 0
+
+for check in word.lower():
+	if check == "a":
+		check_a += 1
+	if check == "e":
+		check_e += 1
+	if check == "i":
+		check_i += 1
+	if check == "o":
+		check_o += 1
+	if check == "u":
+		check_u += 1
+checker = check_a + check_e + check_i + check_o + check_u
+
+print("Number of vowels: ", checker, end=" ")
+
+word = "Makwochukwu"
+
+for checker in word:
+	print(checker, end=" ")
+
+
 number = "32"
 largest_digit = number[0]
 
@@ -83,7 +115,7 @@ for digit in number:
     if digit > largest_digit:
         largest_digit = digit
 
-print("Largest digit:", largest_digit)
+print("Largest digit:", largest_digit, end=" ")
 
 
 number = "54"
@@ -93,4 +125,4 @@ for digit in number:
     if digit < smallest_digit:
         smallest_digit = digit
 
-print(smallest_digit)
+print("Smallest digit:", smallest_digit, end=" ")

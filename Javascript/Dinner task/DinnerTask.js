@@ -108,6 +108,46 @@ for (let i = 0; i < numberOne.length; i++) {
 
 console.log(sum);
 
+let word = "aeroplane";
+
+let check_a = 0;
+let check_e = 0;
+let check_i = 0;
+let check_o = 0;
+let check_u = 0;
+
+for (let count = 0; count < word.length; count++) {
+    let check = word[count].toLowerCase();
+
+    if (check === 'a') {
+        check_a += 1;
+    }
+    if (check === 'e') {
+        check_e += 1;
+    }
+    if (check === 'i') {
+        check_i += 1;
+    }
+    if (check === 'o') {
+        check_o += 1;
+    }
+    if (check === 'u') {
+        check_u += 1;
+    }
+}
+
+let checker = check_a + check_e + check_i + check_o + check_u;
+
+console.log(checker);
+
+
+let word = "Makwochukwu";
+let result = "";
+
+for (let check = 0; check < word.length; check++) {
+    result += word[check] + " ";
+}
+
 let numberTwo = "32";
 let largest_digit = numberTwo[0];
 

@@ -92,11 +92,46 @@ public class DinnerTask{
 	String number = "45";
         int sum = 0;
 
-        for (int i = 0; i < number.length(); i++) {
+       for int i = 0; i < number.length(); i++) {
             sum += Character.getNumericValue(number.charAt(i));
         }
 
         System.out.println(sum);
+
+	String word = "aeroplane";
+
+	int check_a = 0; int check_e = 0; 
+	int check_i = 0; int check_o = 0; 
+	int check_u = 0;
+
+	for (int count = 0; count < word.length(); count++) {
+	char check = Character.toLowerCase(word.charAt(count));
+		if (check == 'a'){
+			check_a += 1;
+		}
+		if (check == 'e'){
+			check_e += 1;
+		}
+		if (check == 'i'){
+			check_i += 1;
+		}
+		if (check == 'o'){
+			check_o += 1;
+		}
+		if (check == 'u'){
+			check_u += 1;
+		}
+	}
+	int checker = check_a + check_e + check_i + check_o + check_u;
+
+	System.out.print(checker);
+
+	String word = "Makwochukwu";
+
+	for (int i = 0; i < word.length(); i++) {
+		char checker = word.charAt(i);
+		System.out.print(checker);
+		}
 
 	 String number = "32";
         char largestDigit = number.charAt(0);
